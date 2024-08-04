@@ -9,7 +9,7 @@
 <img src="Visual comparison with reference models.jpg"/>
 
 [[Paper]](https:)
-
+#### 1. Overview
 The implementation of the model architecture is provided via this repository. Throughout the implementation, PyNET model Pytorch implementation in [this link] (https://github.com/aiff22/PyNET-PyTorch.git) was used as the base model which is described in [this paper] (https://arxiv.org/pdf/2002.05509.pdf). In order to construct 8 bit tone-mapped HDR image for given 10 bit Bayer pattern raw input data, a suitable dataset was created by editing subset of images in the Zurich dataset with Topaz Gigapixel AI and Photomatix Pro 5.0 software. The prepared dataset will be shared, when it is requested. 
 
 This is the first study in which histogram information was utilized in the loss function to achieve better color constancy in the constructed images. The methodology defined in [HistoGAN] (https://arxiv.org/abs/2011.11731) and implementation described in [this link] (https://github.com/mahmoudnafifi/HistoGAN.git) was used for extracting RGB-uv features. Then Hellinger Distance function between the differentiable histograms computed from the groundtruth and predicted images. 
