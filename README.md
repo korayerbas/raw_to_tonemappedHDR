@@ -34,3 +34,21 @@ The model is trained with the batch sizes and total number of epochs presented a
 - Pytorch CUDA 11.6.
 - Torchvision 0.14.1.
 - Python: numpy, math, rawpy and PIL packages
+
+#### 4. Folder Structure
+
+>```model/```            &nbsp; - &nbsp; save and load the models during the training/testing process <br/>
+>```model/raw_to_tonemapped_HDR.pth/```   &nbsp; - &nbsp; the pre-trrained parameters for the proposed model architecture <br/>
+>```dataset/test```       &nbsp; - &nbsp; the folder for raw and groundtruth images for validation purposes <br/>
+>```dataset/training```   &nbsp; - &nbsp; the folder for raw and groundtruth images for training purposes <br/>
+>```results/```           &nbsp; - &nbsp; visual image results saved during training/testing process <br/>
+>```results/full-resolution/``` &nbsp; - &nbsp; visual results for full-resolution RAW image data saved during the testing <br/>
+
+Please refer to explanations described for code structure [this link] (https://github.com/aiff22/PyNET-PyTorch.git). In order to utilize histogram information during training, RGBuvHistBlock.py was utilized as described in [this link] (https://github.com/mahmoudnafifi/HistoGAN.git)
+
+>```RGBuvHistBlock.py```    &nbsp; - &nbsp; extracting histogram features <br/>
+>```model_raw_to_tonemappedHDR.py```   &nbsp; - &nbsp; proposed model architecture (PyTorch) <br/>
+>```train_model.py```     &nbsp; - &nbsp; implementation of the training procedure <br/>
+>```test_model.py```      &nbsp; - &nbsp; applying the pre-trained model to full-resolution test images <br/>
+>```utils.py```           &nbsp; - &nbsp; auxiliary functions <br/>
+>```vgg.py```             &nbsp; - &nbsp; loading the pre-trained vgg-19 network <br/>
