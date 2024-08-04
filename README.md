@@ -57,10 +57,8 @@ Please refer to explanations described for code structure [this link] (https://g
 
 #### 6. Acknowledgement
 
-```
 The implementation provided in this repository was built on top of Pytorch implementation of PyNET by A.Ignatov. Another contribution of this work is utilizing histogram information in the total loss function; for the implementation the methodology described in HistoGAN by M.Afifi was utilized.   
 
-#### 6. Contact
+#### 7. Contact
 
-```
 Please contact Koray Ugur Erbas (koray24938@utexas.edu) for more information
