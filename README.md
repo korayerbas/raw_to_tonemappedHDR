@@ -1,11 +1,5 @@
 ## RAW to Tone-mapped HDR Camera ISP
-<br/>
 
-<img src="Visual comparison with built in ISPs.jpg"/>
-
-<br/>
-
-<img src="Visual comparison with reference models.jpg"/>
 
 [[Paper]](https:)
 
