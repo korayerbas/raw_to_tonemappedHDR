@@ -29,6 +29,8 @@ According to the NIMA, MUSIQ and LIQE no-reference image quality metrics, it is 
 <img src="Training Details.jpg"/>
 
 The model is trained with the batch sizes and total number of epochs presented above. ADAM optimization is used optimize nearly 6.5M parameters in the model architecture. Our model is trained on NVIDIA RTX A5000 GPU. 
-- Python: scipy, numpy, imageio and pillow packages
-- [PyTorch + TorchVision](https://pytorch.org/) libraries
-- Nvidia GPU
+- imageio 2.19.3.
+- Pytorch 1.13.1.
+- Pytorch CUDA 11.6.
+- Torchvision 0.14.1.
+- Python: numpy, math, rawpy and PIL packages
